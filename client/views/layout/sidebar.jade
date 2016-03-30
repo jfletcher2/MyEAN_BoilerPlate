@@ -1,0 +1,49 @@
+div(class="navbar-default sidebar")
+    div(class="sidebar-nav navbar-collapse")
+      ul(class="nav in" id="side-menu")
+        li(class="expandcollapse-item", ng-class="{active: !active}")
+          a(href="", ng-click="active = !active", ng-class="{'expandcollapse-heading-collapsed' : active, 'expandcollapse-heading-expanded' : !active}")
+            i(class="fa fa-wrench fa-fw") 
+            |  Setup 
+            span(class="fa arrow")
+          ul(class="nav nav-second-level slideDown", ng-hide="active")
+            li(class="expand-collapse-content")
+              a(href="")
+                i(class="fa fa-building fa-fw")
+                | Property
+        //- ng-class="{'expandcollapse-heading-collapsed' : active, 'expandcollapse-heading-expanded' : !active}"
+        //- ul(class="nav in" id="side-menu")
+        //-   li(ng-class="{active: collapseVar==1}")
+        //-     a(href="",ng-click="check(1)")
+        //-       i(class="fa fa-building fa-fw")
+        //-       | Property
+        //-       span(class="fa arrow")
+        //-     ul(class="nav nav-second-level", collapse="collapseVar!=1")
+        //-       li(ui-sref-active="active")
+        //-         a(ui-sref="dashboard.panels-wells")
+        //-         | New
+        //-       li(ui-sref-active="active")
+        //-         a(ui-sref="dashboard.panels-wells")
+        //-         | Edit
+        //-       li(ui-sref-active="active")
+        //-         a(ui-sref="dashboard.panels-wells")
+        //-         | Delete
+
+        //- div(class="navbar-default sidebar" role="navigation")
+        //-   div(class="sidebar-nav navbar-collapse")
+        //-     ul(class="nav in" id="side-menu")
+        //-       li(ng-class="{active: collapseVar==1}")
+        //-         a(href="",ng-click="check(1)")
+        //-           i(class="fa fa-building fa-fw")
+        //-           | Property
+        //-           span(class="fa arrow")
+        //-         ul(class="nav nav-second-level", collapse="collapseVar!=1")
+        //-           li(ui-sref-active="active")
+        //-             a(ui-sref="dashboard.panels-wells")
+        //-             | New
+        //-           li(ui-sref-active="active")
+        //-             a(ui-sref="dashboard.panels-wells")
+        //-             | Edit
+        //-           li(ui-sref-active="active")
+        //-             a(ui-sref="dashboard.panels-wells")
+        //-             | Delete
